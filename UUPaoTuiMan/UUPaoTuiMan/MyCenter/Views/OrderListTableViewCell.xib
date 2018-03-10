@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="157" id="KGk-i7-Jjw" customClass="OrderListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="157"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="425" height="156.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="代帮帮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCN-kU-emN">
+                        <rect key="frame" x="15" y="10" width="49" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帮帮地点:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nho-MH-m5F">
+                        <rect key="frame" x="15" y="39.5" width="400" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Jc-VP-I7R">
+                        <rect key="frame" x="15" y="95" width="400" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帮帮地点:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kez-wK-7Gc">
+                        <rect key="frame" x="15" y="67" width="400" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本单收入:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAl-i3-VAX">
+                        <rect key="frame" x="349.5" y="118" width="65.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Nho-MH-m5F" firstAttribute="top" secondItem="cCN-kU-emN" secondAttribute="bottom" constant="10" id="5s3-YS-yUA"/>
+                    <constraint firstItem="cCN-kU-emN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Hmw-YV-4o7"/>
+                    <constraint firstItem="0Jc-VP-I7R" firstAttribute="top" secondItem="Kez-wK-7Gc" secondAttribute="bottom" constant="10" id="Ntd-76-9CX"/>
+                    <constraint firstItem="Kez-wK-7Gc" firstAttribute="trailing" secondItem="Nho-MH-m5F" secondAttribute="trailing" id="TwB-Ej-LPP"/>
+                    <constraint firstItem="Kez-wK-7Gc" firstAttribute="leading" secondItem="Nho-MH-m5F" secondAttribute="leading" id="Yid-Bp-zAZ"/>
+                    <constraint firstItem="WAl-i3-VAX" firstAttribute="top" secondItem="0Jc-VP-I7R" secondAttribute="bottom" constant="5" id="bL9-hF-xwO"/>
+                    <constraint firstAttribute="trailing" secondItem="Nho-MH-m5F" secondAttribute="trailing" constant="10" id="c9m-ZE-C2e"/>
+                    <constraint firstItem="Kez-wK-7Gc" firstAttribute="top" secondItem="Nho-MH-m5F" secondAttribute="bottom" constant="10" id="fse-RI-R3O"/>
+                    <constraint firstItem="0Jc-VP-I7R" firstAttribute="trailing" secondItem="Kez-wK-7Gc" secondAttribute="trailing" id="hsk-pW-WDW"/>
+                    <constraint firstItem="WAl-i3-VAX" firstAttribute="trailing" secondItem="0Jc-VP-I7R" secondAttribute="trailing" id="jpj-Fy-dcn"/>
+                    <constraint firstItem="Nho-MH-m5F" firstAttribute="leading" secondItem="cCN-kU-emN" secondAttribute="leading" id="lfp-KK-C2e"/>
+                    <constraint firstItem="0Jc-VP-I7R" firstAttribute="leading" secondItem="Kez-wK-7Gc" secondAttribute="leading" id="niU-L0-BnW"/>
+                    <constraint firstItem="cCN-kU-emN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tvz-c3-0ce"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="endAddressLabel" destination="Kez-wK-7Gc" id="41Q-y8-bcd"/>
+                <outlet property="moneyLabel" destination="WAl-i3-VAX" id="bsA-jW-PIe"/>
+                <outlet property="noticeLabel" destination="0Jc-VP-I7R" id="pp3-Wh-Qjq"/>
+                <outlet property="startAddressLabel" destination="Nho-MH-m5F" id="u3Y-08-kR0"/>
+                <outlet property="titleLabel" destination="cCN-kU-emN" id="kTc-7S-ZfI"/>
+            </connections>
+            <point key="canvasLocation" x="-47.5" y="-28.5"/>
+        </tableViewCell>
+    </objects>
+</document>

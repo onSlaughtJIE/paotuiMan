@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Deposit View Controller-->
+        <scene sceneID="3sf-40-m69">
+            <objects>
+                <viewController storyboardIdentifier="DepositVC" id="biO-N9-rTt" customClass="MyDepositViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dbV-Oj-Fyu"/>
+                        <viewControllerLayoutGuide type="bottom" id="RyY-um-Sal"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x1B-nN-1oQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的押金还未缴纳,请先交纳押金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uye-f8-RBt">
+                                <rect key="frame" x="15" y="85" width="233" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200.00元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eo-4u-nN6">
+                                <rect key="frame" x="15" y="119.5" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1120" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms7-0Y-s0V">
+                                <rect key="frame" x="15" y="175.5" width="345" height="40"/>
+                                <color key="backgroundColor" red="0.88844734430000005" green="0.090189374980000001" blue="0.088785029949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xfo-zJ-NAf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <state key="normal" title="去交纳">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="DepositBtnAvtion:" destination="biO-N9-rTt" eventType="touchUpInside" id="JLQ-0R-kXj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ms7-0Y-s0V" firstAttribute="top" secondItem="4eo-4u-nN6" secondAttribute="bottom" constant="35" id="1iM-IC-Sk9"/>
+                            <constraint firstAttribute="trailing" secondItem="ms7-0Y-s0V" secondAttribute="trailing" constant="15" id="2n6-QA-WNc"/>
+                            <constraint firstItem="ms7-0Y-s0V" firstAttribute="leading" secondItem="4eo-4u-nN6" secondAttribute="leading" id="3Ql-70-EYW"/>
+                            <constraint firstItem="Uye-f8-RBt" firstAttribute="leading" secondItem="x1B-nN-1oQ" secondAttribute="leading" constant="15" id="79Q-mG-z23"/>
+                            <constraint firstItem="4eo-4u-nN6" firstAttribute="leading" secondItem="Uye-f8-RBt" secondAttribute="leading" id="KkI-Yp-A45"/>
+                            <constraint firstItem="4eo-4u-nN6" firstAttribute="top" secondItem="Uye-f8-RBt" secondAttribute="bottom" constant="15" id="KpU-xj-c2W"/>
+                            <constraint firstItem="Uye-f8-RBt" firstAttribute="top" secondItem="dbV-Oj-Fyu" secondAttribute="bottom" constant="65" id="gkY-dX-b1q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="depositBtn" destination="ms7-0Y-s0V" id="1sS-5t-7AV"/>
+                        <outlet property="depositLabel" destination="4eo-4u-nN6" id="KaX-Wn-sB3"/>
+                        <outlet property="titleLabel" destination="Uye-f8-RBt" id="vYC-gg-Fvp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZI-c5-kNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184.80000000000001" y="240.62968515742131"/>
+        </scene>
+    </scenes>
+</document>

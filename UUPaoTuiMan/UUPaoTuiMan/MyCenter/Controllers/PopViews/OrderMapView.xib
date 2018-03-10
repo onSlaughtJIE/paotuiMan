@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Pc8-vQ-Zz7" customClass="OrderMapView">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="257"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30w-PD-nd7">
+                    <rect key="frame" x="0.0" y="0.0" width="449" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ts9-eP-QwD">
+                            <rect key="frame" x="408" y="4" width="31" height="30"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="CancelAction:" destination="Pc8-vQ-Zz7" eventType="touchUpInside" id="Av8-hB-22o"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0公里" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFr-qH-37M">
+                            <rect key="frame" x="195" y="45" width="59" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="代排队" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQX-Gv-F4A">
+                            <rect key="frame" x="10" y="10" width="46" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距您距离" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXJ-2R-yC5">
+                            <rect key="frame" x="193.5" y="70.5" width="62" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88844734430000005" green="0.090189374980000001" blue="0.088785029949999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="zQX-Gv-F4A" firstAttribute="leading" secondItem="30w-PD-nd7" secondAttribute="leading" constant="10" id="4mq-5y-9Eo"/>
+                        <constraint firstItem="vFr-qH-37M" firstAttribute="top" secondItem="30w-PD-nd7" secondAttribute="top" constant="45" id="DEs-ri-idB"/>
+                        <constraint firstItem="GXJ-2R-yC5" firstAttribute="centerX" secondItem="vFr-qH-37M" secondAttribute="centerX" id="LCm-yo-eZS"/>
+                        <constraint firstItem="vFr-qH-37M" firstAttribute="centerX" secondItem="30w-PD-nd7" secondAttribute="centerX" id="RAv-ve-l3G"/>
+                        <constraint firstAttribute="trailing" secondItem="ts9-eP-QwD" secondAttribute="trailing" constant="10" id="egg-JD-H0j"/>
+                        <constraint firstItem="ts9-eP-QwD" firstAttribute="centerY" secondItem="zQX-Gv-F4A" secondAttribute="centerY" id="hMj-j6-pcv"/>
+                        <constraint firstItem="GXJ-2R-yC5" firstAttribute="top" secondItem="vFr-qH-37M" secondAttribute="bottom" constant="5" id="jao-n2-tt8"/>
+                        <constraint firstAttribute="height" constant="100" id="rNN-CQ-aJ5"/>
+                        <constraint firstItem="zQX-Gv-F4A" firstAttribute="top" secondItem="30w-PD-nd7" secondAttribute="top" constant="10" id="vUL-pM-pdO"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单距离" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2L-oJ-IOG">
+                    <rect key="frame" x="0.0" y="100" width="449" height="25"/>
+                    <color key="backgroundColor" red="0.95504325629999998" green="0.70219677690000004" blue="0.11321670559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="J9t-wN-ude"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="30w-PD-nd7" secondAttribute="trailing" id="0vo-dj-nbA"/>
+                <constraint firstItem="B2L-oJ-IOG" firstAttribute="top" secondItem="30w-PD-nd7" secondAttribute="bottom" id="3kk-2N-ufn"/>
+                <constraint firstItem="30w-PD-nd7" firstAttribute="top" secondItem="Pc8-vQ-Zz7" secondAttribute="top" id="FdD-VQ-5uO"/>
+                <constraint firstItem="B2L-oJ-IOG" firstAttribute="trailing" secondItem="30w-PD-nd7" secondAttribute="trailing" id="Jvg-0p-3he"/>
+                <constraint firstItem="B2L-oJ-IOG" firstAttribute="leading" secondItem="30w-PD-nd7" secondAttribute="leading" id="pcQ-Qc-gVE"/>
+                <constraint firstItem="30w-PD-nd7" firstAttribute="leading" secondItem="Pc8-vQ-Zz7" secondAttribute="leading" id="u9h-lw-Pqc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="distanceLabel" destination="vFr-qH-37M" id="3yj-Rc-dAd"/>
+                <outlet property="orderDistanceLabel" destination="B2L-oJ-IOG" id="jlG-Zx-4W4"/>
+                <outlet property="titleLabel" destination="zQX-Gv-F4A" id="mZf-EH-V1d"/>
+            </connections>
+            <point key="canvasLocation" x="170" y="-203"/>
+        </view>
+    </objects>
+</document>

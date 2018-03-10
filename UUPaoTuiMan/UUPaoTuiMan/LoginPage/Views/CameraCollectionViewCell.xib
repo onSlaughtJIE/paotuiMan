@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CameraCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="111" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="111" height="114"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QTq-rd-6pT">
+                        <rect key="frame" x="0.0" y="0.0" width="111" height="114"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVO-A0-tRn">
+                        <rect key="frame" x="90" y="5" width="16" height="22"/>
+                        <state key="normal" image="photo_unselect"/>
+                        <state key="selected" image="photo_select"/>
+                    </button>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zyi-fr-Xbp">
+                        <rect key="frame" x="0.0" y="0.0" width="111" height="114"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Zyi-fr-Xbp" firstAttribute="trailing" secondItem="QTq-rd-6pT" secondAttribute="trailing" id="2wW-pY-XxV"/>
+                <constraint firstItem="Zyi-fr-Xbp" firstAttribute="bottom" secondItem="QTq-rd-6pT" secondAttribute="bottom" id="8r3-Yf-dDW"/>
+                <constraint firstItem="QTq-rd-6pT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9zv-8H-ao7"/>
+                <constraint firstItem="Zyi-fr-Xbp" firstAttribute="leading" secondItem="QTq-rd-6pT" secondAttribute="leading" id="DZr-Fc-2mf"/>
+                <constraint firstAttribute="trailing" secondItem="CVO-A0-tRn" secondAttribute="trailing" constant="5" id="HBg-PP-jlh"/>
+                <constraint firstItem="QTq-rd-6pT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MT1-Nb-Fm1"/>
+                <constraint firstItem="CVO-A0-tRn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="aN0-Fp-h4L"/>
+                <constraint firstAttribute="trailing" secondItem="QTq-rd-6pT" secondAttribute="trailing" id="ggG-oi-yyT"/>
+                <constraint firstItem="Zyi-fr-Xbp" firstAttribute="top" secondItem="QTq-rd-6pT" secondAttribute="top" id="rVO-co-ypD"/>
+                <constraint firstAttribute="bottom" secondItem="QTq-rd-6pT" secondAttribute="bottom" id="sJL-JX-vLJ"/>
+            </constraints>
+            <size key="customSize" width="111" height="114"/>
+            <connections>
+                <outlet property="backView" destination="Zyi-fr-Xbp" id="4kC-h9-HKf"/>
+                <outlet property="photoImageView" destination="QTq-rd-6pT" id="Dyh-DY-DPo"/>
+                <outlet property="selectBtn" destination="CVO-A0-tRn" id="ckO-mj-Hdr"/>
+            </connections>
+            <point key="canvasLocation" x="-104.5" y="-102"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photo_select" width="16" height="16"/>
+        <image name="photo_unselect" width="16" height="16"/>
+    </resources>
+</document>

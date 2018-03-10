@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="MineCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="146"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ds-JY-xmw">
+                    <rect key="frame" x="143.5" y="10" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="QUG-6e-fd7"/>
+                        <constraint firstAttribute="height" constant="60" id="zoj-3c-R0I"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="信用分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAC-lV-fLt">
+                    <rect key="frame" x="150.5" y="96" width="46" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.28687661920000002" green="0.28687661920000002" blue="0.28687661920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="编号:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIl-Yc-jSq">
+                    <rect key="frame" x="155.5" y="78" width="35" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.28687661920000002" green="0.28687661920000002" blue="0.28687661920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的邀请码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOS-3F-kHg">
+                    <rect key="frame" x="135" y="114" width="76.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="nAC-lV-fLt" firstAttribute="centerX" secondItem="VIl-Yc-jSq" secondAttribute="centerX" id="27W-z3-Qs1"/>
+                <constraint firstItem="YOS-3F-kHg" firstAttribute="centerX" secondItem="VIl-Yc-jSq" secondAttribute="centerX" id="2KE-lW-NqU"/>
+                <constraint firstItem="YOS-3F-kHg" firstAttribute="top" secondItem="nAC-lV-fLt" secondAttribute="bottom" id="3fr-DK-6Yr"/>
+                <constraint firstItem="nAC-lV-fLt" firstAttribute="top" secondItem="VIl-Yc-jSq" secondAttribute="bottom" id="BWO-tm-y9r"/>
+                <constraint firstItem="VIl-Yc-jSq" firstAttribute="centerX" secondItem="4ds-JY-xmw" secondAttribute="centerX" id="FLl-5d-yJX"/>
+                <constraint firstItem="VIl-Yc-jSq" firstAttribute="top" secondItem="4ds-JY-xmw" secondAttribute="bottom" constant="8" id="ggQ-FR-TEq"/>
+                <constraint firstItem="4ds-JY-xmw" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="liR-pt-hSl"/>
+                <constraint firstItem="4ds-JY-xmw" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="qGX-Wt-fld"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" red="0.87889658530000003" green="0.88218182379999999" blue="0.89203753929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="ScoreLabel" destination="nAC-lV-fLt" id="7L4-HP-fJc"/>
+                <outlet property="headImageView" destination="4ds-JY-xmw" id="efC-Up-Lcb"/>
+                <outlet property="joinLabel" destination="YOS-3F-kHg" id="lgU-5q-OeS"/>
+                <outlet property="numLabel" destination="VIl-Yc-jSq" id="E4r-Zc-eLu"/>
+            </connections>
+            <point key="canvasLocation" x="-91.5" y="-87"/>
+        </collectionReusableView>
+    </objects>
+</document>

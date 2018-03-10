@@ -1,0 +1,8 @@
+target 'UUPaoTuiMan' do
+
+pod 'AFNetworking'
+pod 'MBProgressHUD'
+pod 'MJRefresh'
+pod 'Masonry'
+pod 'AMap3DMap'
+end

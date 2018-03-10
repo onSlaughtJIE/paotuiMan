@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ShopStoreCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="276"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="276"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fZb-zu-yr0">
+                        <rect key="frame" x="10" y="10" width="175" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="4QE-Nc-Ty5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余:100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CK-wF-gqX">
+                        <rect key="frame" x="10" y="255" width="53" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahy-zg-9Vz">
+                        <rect key="frame" x="10" y="232" width="25.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOf-me-x4t">
+                        <rect key="frame" x="45.5" y="233" width="13.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPH-hk-2Bb">
+                        <rect key="frame" x="125" y="241" width="60" height="30"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="NpO-ob-JzE"/>
+                        </constraints>
+                        <state key="normal" title="购买">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="shopMallAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="9Oi-wO-XBp"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跑客装备套装B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDS-ZG-EjX">
+                        <rect key="frame" x="10" y="204" width="101.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="fZb-zu-yr0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="E6F-vI-82a"/>
+                <constraint firstAttribute="trailing" secondItem="fZb-zu-yr0" secondAttribute="trailing" constant="10" id="EeM-hq-l0E"/>
+                <constraint firstItem="ahy-zg-9Vz" firstAttribute="top" secondItem="oDS-ZG-EjX" secondAttribute="bottom" constant="10" id="EyN-4d-MWW"/>
+                <constraint firstItem="8CK-wF-gqX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="QdU-Ml-TPt"/>
+                <constraint firstItem="mOf-me-x4t" firstAttribute="centerY" secondItem="ahy-zg-9Vz" secondAttribute="centerY" id="aTq-gh-0ae"/>
+                <constraint firstItem="oDS-ZG-EjX" firstAttribute="leading" secondItem="ahy-zg-9Vz" secondAttribute="leading" id="jRt-q6-8zR"/>
+                <constraint firstAttribute="trailing" secondItem="JPH-hk-2Bb" secondAttribute="trailing" constant="10" id="mdf-S1-knZ"/>
+                <constraint firstAttribute="bottom" secondItem="8CK-wF-gqX" secondAttribute="bottom" constant="5" id="nc7-mD-FgX"/>
+                <constraint firstItem="fZb-zu-yr0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="tIO-Bd-9wB"/>
+                <constraint firstItem="8CK-wF-gqX" firstAttribute="top" secondItem="ahy-zg-9Vz" secondAttribute="bottom" constant="5" id="uB4-DT-A8V"/>
+                <constraint firstItem="ahy-zg-9Vz" firstAttribute="leading" secondItem="8CK-wF-gqX" secondAttribute="leading" id="wqK-R0-ZhX"/>
+                <constraint firstItem="JPH-hk-2Bb" firstAttribute="bottom" secondItem="8CK-wF-gqX" secondAttribute="bottom" id="yHt-tI-6QY"/>
+                <constraint firstItem="mOf-me-x4t" firstAttribute="leading" secondItem="ahy-zg-9Vz" secondAttribute="trailing" constant="10" id="yTp-sX-GcD"/>
+            </constraints>
+            <size key="customSize" width="195" height="276"/>
+            <connections>
+                <outlet property="headImageView" destination="fZb-zu-yr0" id="0YJ-aF-TE7"/>
+                <outlet property="priceLabel" destination="ahy-zg-9Vz" id="uln-hi-zfT"/>
+                <outlet property="subTitleLabel" destination="8CK-wF-gqX" id="xte-HT-jVp"/>
+                <outlet property="titleLabel" destination="oDS-ZG-EjX" id="cx6-Cn-UYj"/>
+            </connections>
+            <point key="canvasLocation" x="-66.5" y="-3"/>
+        </collectionViewCell>
+    </objects>
+</document>
